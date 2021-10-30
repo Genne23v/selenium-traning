@@ -45,3 +45,10 @@ driver.manage().timeouts().implicitlyWait(TimeOut, TimeUnit.SECONDS);
 WebDriverWait wait = new WebDriverWait(driver, 10);
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("element"));
 ```
+#### Other Expected Conditions
+```java
+elementToBeClickable()
+elementToBeSelected()
+presenceOfElementLocated()
+textToBePresentInElement()
+```
