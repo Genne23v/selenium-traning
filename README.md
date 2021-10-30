@@ -9,6 +9,7 @@
 
 ### Tested Website
 https://formy-project.herokuapp.com
+https://selenium-blog.herokuapp.com (Ruby test)
 
 ### Using CSS Selector
 ```java
@@ -65,3 +66,21 @@ java -jar selenium-server-<version>.jar node -hub IP-address:PORT
 ```
 4. Go back to console to check set-up status (default: 5 Chrome, 5 Firefox, 1 Safari)
 
+### Resources
+• Ruby WebDriver API docs: http://seleniumhq.github.io/selenium/docs/api/rb/Selenium/WebDriver
+• Selenium wiki: https://github.com/SeleniumHQ/selenium/wiki
+RSpec docs: http://rspec.info
+• RSpec docs: http://rspec.info
+
+#### Set Up Environment Variable on Windows
+From Command Prompt
+To look up path:
+echo %PATH%
+To add gecko driver to path:
+set PATH=%PATH%;C:\Users\your_username\Downloads\geckodriver
+From Dialog Window 
+On Windows systems, to change the system path, right-click My Computer/This PC
+and choose Properties. 
+In the dialogue that appears, select Advanced system settings > Environment Variables.
+Under System variables, select to edit path and add new entry: 
+“C:\Users\your_username\Downloads\geckodriver” to the Path variable and click OK.
