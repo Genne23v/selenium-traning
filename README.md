@@ -44,5 +44,4 @@ driver.manage().timeouts().implicitlyWait(TimeOut, TimeUnit.SECONDS);
 ```java
 WebDriverWait wait = new WebDriverWait(driver, 10);
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("element"));
-driver.manage().timeouts().implicitlyWait(TimeOut, TimeUnit.SECONDS);
 ```
