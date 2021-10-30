@@ -10,7 +10,7 @@
 ### Tested Website
 https://formy-project.herokuapp.com
 
-## Using CSS Selector
+### Using CSS Selector
 ```java
 //By Tag and Class(or id) (e.g. <input class="q" type="text"> or id="q") 
 driver.findElement(By.cssSelector("input.q"));  //OR ("input#q")
@@ -33,4 +33,16 @@ driver.findElement(By.cssSelector("div[id*='textField']"));
 //Selecting Child 
 driver.findElement(By.cssSelector("div#parent a"));
 driver.findElement(By.cssSelector("#list li:nth-child(n)"));
+```
+
+### Synchronization Issue
+#### Implicit Waits
+```java
+driver.manage().timeouts().implicitlyWait(TimeOut, TimeUnit.SECONDS);
+```
+#### Explicit Waits
+```java
+WebDriverWait wait = new WebDriverWait(driver, 10);
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("element"));
+driver.manage().timeouts().implicitlyWait(TimeOut, TimeUnit.SECONDS);
 ```
