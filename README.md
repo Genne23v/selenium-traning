@@ -52,3 +52,16 @@ elementToBeSelected()
 presenceOfElementLocated()
 textToBePresentInElement()
 ```
+### Integration
+#### Selenium Grid
+1. Download Selenium Grid on homepage. Then go to downloaded file location. 
+```
+java -jar selenium-server-<version>.jar hub
+```
+2. Go to IP address displayed after above command execution on a browser. <IP-address:PORT/grid/console>
+3. Add node with below command
+```
+java -jar selenium-server-<version>.jar node -hub IP-address:PORT
+```
+4. Go back to console to check set-up status (default: 5 Chrome, 5 Firefox, 1 Safari)
+
