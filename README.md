@@ -9,3 +9,9 @@
 
 ### Tested Website
 https://formy-project.herokuapp.com
+
+## Using CSS Selector
+```java
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
